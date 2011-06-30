@@ -1,57 +1,111 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
+<script type='text/javascript'>
+  //<![CDATA[
+    var _sf_startpt=(new Date()).getTime();
+  //]]>
+</script>
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+<meta content='width=1100' name='viewport' />
+<title>
+Quick Left
+ | A web engineering company based in Boulder / Denver, CO
+</title>
+<meta content='web development, web engineering, web applications, web apps, boulder, colorado, cloud computing, systems architecture, ruby on rails, ruby, html5, css3, ec2, javascript, jquery, php, web design' name='keywords' />
+<meta content="Quick Left is a web engineering company. Our team is talented, dedicated and forward thinking. We work together to build successful web applications. We're proud of our relationships and even more proud of our work." name='description' />
+<link href='/favicon.ico' rel='shortcut icon' type='image/x-icon' />
+<link href='/blog/index/rss' rel='alternate' title='RSS' type='application/rss+xml' />
+<!--[if IE]>
+<script src="http://quickleft.com/javascripts/all.js?1285371344" type="text/javascript"></script>
+<![endif]-->
+<link href="http://quickleft.com/stylesheets/base_packaged.css?1308698732" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/ql_listens.css?1308698732" media="all" rel="stylesheet" type="text/css" />
+<!--[if IE 7]>
+<link href="http://quickleft.comstylesheets/ie.css?1285371344" media="all" rel="stylesheet" type="text/css" />
+<script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js" type="text/javascript"></script>
+<script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/ie7-squish.js" type="text/javascript"></script>
+<![endif]-->
 
-  <title>June 2011 - API Mashup Smashup</title>
-  
-  <style type="text/css" media="screen">
-    body { font-family: Helvetica; } /* obvi */
-    header, section { margin: 0 auto; width: 600px; color: #666; }
-    a { text-decoration: none; color: #333; background: #eee; padding: 1px 3px; }
-  </style>
 </head>
+<body id='home-index'>
+<div id='container'>
 
-<body>
+<header id='main_header'>
 
-  <div id="container">
-    <header>
-      <h1>API Mashup Smashup</h1>
-      <h2>Quick Left Hackfest June 2011</h2>
-    </header>
-    <section>
-      <p>Welcome.
-      <p>This month we are focusing on public API integration/mashup/utility/debauchery.<br />
-        Services that group various services' APIs like <a href="http://mashery.com">Mashery</a>, <a href="http://3scales.net">3scale</a>, and <a href="http://apigee.com"><strong>Apigee</strong></a> are becoming more and more prevalent and automatically lend themselves to API mashup goodness-- that is squashing up a couple different services via their API to make a (better?) standalone product.
-      <p>So, leveraging one of the above company's tools (have you seen <a href="https://apigee.com/console">Apigee's console</a>?!), or your own knowledge of independent APIs, let the smashing good time begin!
-      <h3>The Rules:</h3>
-      <ul>
-        <li>Use a least 2 services
-        <li>3 gets you bonus points
-        <li>Language/platform agnostic
-        <li>Team size: 1-4
-        <li>Pairs strongly encouraged
-        <li>No paid access APIs
-        <li>No scrapers
-      </ul>
-      <h3>Process:</h3>
-      <ol>
-        <li>Fork
-        <li>Make
-        <li>Pull request
-      </ol>
-      <p><small>Need help? Ask any Quick Lefter.</small>
-      <h3>Judgement:</h3>
-      <p>Judged entirely on <font color="red">radness<!-- like the font tag! --></font>.
-      <p>Breaking away from the usual twitter mashup will put you ahead of the competition, we suggest looking into alternative data sources [like <a href="http://services.sunlightlabs.com/">Sunlight's Congress API</a> (with JSONP goodness)].
-      <p>Your pair/team/self will be given 5 minutes to present (our platform or yours), in the order the pull requests were received, in front of our entirely unbiased and completely qualified panel.
-      <p>Hard code stop is at 9pm, so get to nomming the JSON (or XML...)!
-    </section>
+<h1 class='logo'><a href="/">Quick Left</a></h1>
+<a class='blog' href='/blog'>- Blog</a>
+</header>
+
+<section id='content'>
+<p id='intro'>
+Curious as to which way our tastes lean? Check 'em out below.
+</p>
+<section class='body' id='services'>
+<h2>Heavy Rotation on RDIO</h2>
+
+  <div id="rdio_wrapper">
+    <img src="#" alt="RDIO QL Icon" />
   </div>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.1.min.js">\x3C/script>')</script>
+  <div id="music_wrap">
+    <div id="heavy_rotation">
+      <ul></ul>
+    </div>
+  </div>
+  <div id="loader"><img src="/images/ajax-loader.gif" alt="loading" /></div>
 
-  <script src="js/script.js"></script>
+</section>
 
+<footer id='main_footer'>
+<div class='contact'>info@quickleft.com<br />303.242.5536</div>
+<ul>
+<li><a href='http://twitter.com/quickleft' rel='external' title='Quick Left on Twitter'>twitter.com/quickleft</a></li>
+<li><a href='http://flickr.com/quickleft' rel='external' title='Quick Left on Flickr'>flickr.com/quickleft</a></li>
+</ul>
+<div id='copyright'>&copy; Quick Left 2011</div>
+<address>1919 14th St. # 714<br />Boulder, CO 80302</address>
+
+</footer>
+
+</div>
+<script src="http://quickleft.com/javascripts/base_packaged.js?1308698734" type="text/javascript"></script>
+<script src='/js/jquery_template.js' type='text/javascript'></script>
+
+<script id="albumWrap" type="text/x-jquery-tmpl">
+  <li id="${name}">
+    <h3>${artist}</h3>
+    <a target="_blank" href="http://rdio.com${url}">
+      <img alt="${artist}" class="album_image" src="${icon}"></a>
+    <h4>${name}</h4>
+    <a href="http://rdio.com${url}" target="_blank" class="arrow_icon icons">&nbsp;</a>
+    <a href="#" class="info_icon icons" data-album="${name}" data-artist="${artist}">&nbsp;</a>
+  </li>
+</script>
+
+<script id="albumInfo" type="text/x-jquery-tmpl">
+  <div class="album_info">
+    <a href="#" class="close_btn"><img src="/images/close.png" /></a>
+    <h3>${artist.name}</h3>
+    <p>${artist.profile}</p>
+
+    <p>Aka:
+      {{each artist.aliases}}
+        ${$value},
+      {{/each}}
+    </p>
+
+    <a href="${artist.images[0].uri}" target="_blank"><img src="${artist.images[0].uri}" width="200" class="artist_disc_img" /></a>
+    <ul class="urls_artist">
+      {{each artist.urls}}
+        <li><a href="${$value}" target="_blank">${$value}</a></li>
+      {{/each}}
+    </ul>
+
+  </div>
+</script>
+
+<script src='/js/ql_listens.js' type='text/javascript'></script>
 </body>
 </html>
+
